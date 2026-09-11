@@ -45,4 +45,6 @@ Audio is omitted (silent reel).
 10. Closing — *Widow's Bight, 1923*
 11. Blackout — Chapter One readiness
 
-Files: `index.html`, `styles.css`, `app.js`, `README.md`.
+Files: `index.html`, `styles.css`, `app.js`, `assets/` (period stills), `CREDITS.md`, `README.md`.
+
+Panel stills are public-domain archival photos — see **CREDITS.md**. SVG placeholders were replaced.

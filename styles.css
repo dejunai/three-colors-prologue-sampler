@@ -348,63 +348,61 @@ h2 {
   padding: 0 24px;
 }
 
-/* —— SVG art scenes (inline via background / pseudo) —— */
-#art-harbor {
-  background:
-    linear-gradient(180deg, #1a2228 0%, #243038 28%, #2a353c 55%, #1e1a14 55%, #16120e 100%);
-}
-
-#art-harbor::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 420' fill='none'%3E%3Crect width='800' height='420' fill='%2315181c'/%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%231c2830'/%3E%3Cstop offset='100%25' stop-color='%232a3840'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='230' fill='url(%23sky)'/%3E%3Ccircle cx='620' cy='70' r='28' fill='%23c4b090' fill-opacity='0.25'/%3E%3Cpath d='M0 230 Q200 210 400 228 T800 220 L800 420 L0 420 Z' fill='%231a1612'/%3E%3Cpath d='M0 235 Q250 218 500 232 T800 225' stroke='%233a4838' stroke-width='1.5' fill='none' opacity='0.5'/%3E%3C!-- distant hills --%3E%3Cpath d='M0 200 L80 170 L140 185 L220 155 L300 175 L380 148 L480 168 L560 145 L650 160 L720 140 L800 155 L800 230 L0 230 Z' fill='%23141c22'/%3E%3C!-- pier --%3E%3Crect x='60' y='248' width='280' height='8' fill='%232a241c'/%3E%3Crect x='80' y='256' width='8' height='40' fill='%231e1a14'/%3E%3Crect x='140' y='256' width='8' height='48' fill='%231e1a14'/%3E%3Crect x='200' y='256' width='8' height='42' fill='%231e1a14'/%3E%3Crect x='260' y='256' width='8' height='50' fill='%231e1a14'/%3E%3C!-- schooner silhouette --%3E%3Cg fill='%230d0c0a'%3E%3Cpath d='M420 240 L440 220 L560 220 L590 240 L575 248 L430 248 Z'/%3E%3Crect x='470' y='140' width='4' height='80'/%3E%3Crect x='520' y='155' width='3.5' height='65'/%3E%3Cpath d='M474 145 L474 200 L530 200 L474 145 Z' fill-opacity='0.9'/%3E%3Cpath d='M524 160 L524 205 L565 205 L524 160 Z' fill-opacity='0.85'/%3E%3C/g%3E%3C!-- second vessel --%3E%3Cg fill='%230a0908' opacity='0.75'%3E%3Cpath d='M280 255 L295 242 L360 242 L378 255 L368 260 L288 260 Z'/%3E%3Crect x='318' y='195' width='3' height='47'/%3E%3Cpath d='M321 198 L321 240 L355 240 Z'/%3E%3C/g%3E%3C!-- warehouse roofs --%3E%3Cg fill='%2312100e'%3E%3Cpath d='M40 210 L70 185 L130 185 L155 210 Z'/%3E%3Crect x='45' y='210' width='105' height='40'/%3E%3Cpath d='M650 205 L690 178 L760 178 L790 205 Z'/%3E%3Crect x='655' y='205' width='130' height='45'/%3E%3C/g%3E%3C!-- water lines --%3E%3Cg stroke='%23283028' stroke-width='1' opacity='0.4' fill='none'%3E%3Cpath d='M20 290 Q100 285 180 292'/%3E%3Cpath d='M200 310 Q320 302 440 312'/%3E%3Cpath d='M480 295 Q600 288 720 298'/%3E%3Cpath d='M100 340 Q250 332 400 342'/%3E%3C/g%3E%3C!-- lamp post --%3E%3Crect x='175' y='200' width='3' height='48' fill='%231a1612'/%3E%3Ccircle cx='176.5' cy='198' r='5' fill='%23b09060' fill-opacity='0.35'/%3E%3C/svg%3E");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.95;
-  filter: sepia(0.35) contrast(1.05) brightness(0.92);
-}
-
-#art-empty {
-  background: #12151a;
-}
-
-#art-empty::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 420' fill='none'%3E%3Crect width='800' height='420' fill='%2312161a'/%3E%3Crect width='800' height='210' fill='%231a2228'/%3E%3Cpath d='M0 210 L800 205 L800 420 L0 420 Z' fill='%2314100c'/%3E%3C!-- empty pier planks --%3E%3Cg fill='%23221e18'%3E%3Crect x='50' y='230' width='520' height='10'/%3E%3Crect x='70' y='240' width='6' height='55'/%3E%3Crect x='130' y='240' width='6' height='60'/%3E%3Crect x='190' y='240' width='6' height='52'/%3E%3Crect x='250' y='240' width='6' height='58'/%3E%3Crect x='310' y='240' width='6' height='54'/%3E%3Crect x='370' y='240' width='6' height='62'/%3E%3Crect x='430' y='240' width='6' height='50'/%3E%3Crect x='490' y='240' width='6' height='56'/%3E%3C/g%3E%3C!-- vacant mooring posts --%3E%3Cg fill='%231a1612'%3E%3Crect x='100' y='218' width='10' height='22' rx='1'/%3E%3Crect x='220' y='216' width='10' height='24' rx='1'/%3E%3Crect x='340' y='217' width='10' height='23' rx='1'/%3E%3Crect x='460' y='215' width='10' height='25' rx='1'/%3E%3C/g%3E%3C!-- slack ropes --%3E%3Cg stroke='%233a3228' stroke-width='1.5' fill='none' opacity='0.6'%3E%3Cpath d='M105 220 Q130 250 155 235'/%3E%3Cpath d='M225 218 Q250 255 280 240'/%3E%3Cpath d='M345 219 Q370 248 395 232'/%3E%3C/g%3E%3C!-- distant empty horizon ships gone --%3E%3Cpath d='M0 188 Q200 178 400 186 T800 180' stroke='%23283030' stroke-width='1' fill='none' opacity='0.5'/%3E%3C!-- fog bank --%3E%3Cellipse cx='500' cy='170' rx='220' ry='28' fill='%232a3038' fill-opacity='0.25'/%3E%3Cellipse cx='280' cy='160' rx='160' ry='20' fill='%232a3038' fill-opacity='0.2'/%3E%3C!-- single gull --%3E%3Cpath d='M600 90 Q608 84 616 90 Q608 88 600 90' stroke='%236a6050' stroke-width='1.2' fill='none' opacity='0.5'/%3E%3C!-- warehouse dark --%3E%3Cpath d='M620 175 L660 150 L740 150 L775 175 Z' fill='%230e0c0a'/%3E%3Crect x='625' y='175' width='145' height='50' fill='%2312100e'/%3E%3C!-- water --%3E%3Cg stroke='%23202828' stroke-width='1' opacity='0.35' fill='none'%3E%3Cpath d='M40 300 Q180 292 320 302'/%3E%3Cpath d='M360 320 Q500 310 640 322'/%3E%3Cpath d='M80 350 Q250 340 420 352'/%3E%3C/g%3E%3Ctext x='400' y='400' text-anchor='middle' fill='%234a4035' font-family='serif' font-size='11' letter-spacing='3' opacity='0.4'%3EEMPTY BERTHS%3C/text%3E%3C/svg%3E");
-  background-size: cover;
-  background-position: center;
-  filter: sepia(0.4) contrast(1.08) brightness(0.88);
-}
-
-#art-ledger {
-  background: #1a1610;
-}
-
-#art-ledger::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 420' fill='none'%3E%3Crect width='800' height='420' fill='%2318120e'/%3E%3C!-- desk surface --%3E%3Crect x='0' y='300' width='800' height='120' fill='%2314100c'/%3E%3C!-- open ledger book --%3E%3Cg%3E%3Cpath d='M180 80 L400 70 L400 340 L180 330 Z' fill='%23c8b896'/%3E%3Cpath d='M400 70 L620 80 L620 330 L400 340 Z' fill='%23bca882'/%3E%3C!-- spine shadow --%3E%3Crect x='392' y='70' width='16' height='270' fill='%239a8860'/%3E%3C!-- ruled lines left --%3E%3Cg stroke='%238a7858' stroke-width='0.8' opacity='0.55'%3E%3Cline x1='200' y1='110' x2='380' y2='108'/%3E%3Cline x1='200' y1='130' x2='380' y2='128'/%3E%3Cline x1='200' y1='150' x2='380' y2='148'/%3E%3Cline x1='200' y1='170' x2='380' y2='168'/%3E%3Cline x1='200' y1='190' x2='380' y2='188'/%3E%3Cline x1='200' y1='210' x2='380' y2='208'/%3E%3Cline x1='200' y1='230' x2='380' y2='228'/%3E%3Cline x1='200' y1='250' x2='380' y2='248'/%3E%3Cline x1='200' y1='270' x2='380' y2='268'/%3E%3Cline x1='200' y1='290' x2='380' y2='288'/%3E%3C/g%3E%3C!-- ruled lines right --%3E%3Cg stroke='%238a7858' stroke-width='0.8' opacity='0.55'%3E%3Cline x1='420' y1='108' x2='600' y2='110'/%3E%3Cline x1='420' y1='128' x2='600' y2='130'/%3E%3Cline x1='420' y1='148' x2='600' y2='150'/%3E%3Cline x1='420' y1='168' x2='600' y2='170'/%3E%3Cline x1='420' y1='188' x2='600' y2='190'/%3E%3Cline x1='420' y1='208' x2='600' y2='210'/%3E%3Cline x1='420' y1='228' x2='600' y2='230'/%3E%3Cline x1='420' y1='248' x2='600' y2='250'/%3E%3Cline x1='420' y1='268' x2='600' y2='270'/%3E%3Cline x1='420' y1='288' x2='600' y2='290'/%3E%3C/g%3E%3C!-- ink scrawls (abstract) --%3E%3Cg stroke='%232a2218' stroke-width='1.2' fill='none' opacity='0.7'%3E%3Cpath d='M210 125 Q240 120 270 128 T330 124'/%3E%3Cpath d='M210 145 Q250 140 290 148'/%3E%3Cpath d='M210 165 Q230 162 280 168 T350 164'/%3E%3Cpath d='M210 205 Q260 198 320 208'/%3E%3Cpath d='M430 125 Q480 118 540 128'/%3E%3Cpath d='M430 145 Q470 150 530 142'/%3E%3Cpath d='M430 185 Q490 178 560 188'/%3E%3Cpath d='M430 225 Q500 220 550 230'/%3E%3C/g%3E%3C!-- stamped CLOSED --%3E%3Crect x='460' y='250' width='100' height='28' fill='none' stroke='%23604030' stroke-width='2' opacity='0.45' transform='rotate(-8 510 264)'/%3E%3C/g%3E%3C!-- inkwell --%3E%3Cellipse cx='140' cy='310' rx='22' ry='10' fill='%231a1410'/%3E%3Crect x='128' y='280' width='24' height='30' rx='3' fill='%232a2018'/%3E%3Cellipse cx='140' cy='280' rx='12' ry='5' fill='%2314100c'/%3E%3C!-- quill --%3E%3Cpath d='M155 275 L210 220' stroke='%23c4b090' stroke-width='2'/%3E%3Cpath d='M210 220 L218 208 L205 215 Z' fill='%23a08060'/%3E%3C!-- sealing wax --%3E%3Ccircle cx='680' cy='300' r='18' fill='%23402020' opacity='0.7'/%3E%3Ccircle cx='680' cy='300' r='12' fill='%23502828' opacity='0.5'/%3E%3C!-- candle glow --%3E%3Crect x='700' y='240' width='8' height='50' fill='%23d4c4a0' opacity='0.35'/%3E%3Cellipse cx='704' cy='235' rx='10' ry='14' fill='%23e8c878' opacity='0.25'/%3E%3C/svg%3E");
-  background-size: cover;
-  background-position: center;
-  filter: sepia(0.45) contrast(1.05) brightness(0.9);
-}
-
+/* —— Period stills (public-domain photos; see CREDITS.md) —— */
+#art-harbor,
+#art-empty,
+#art-ledger,
 #art-houses {
-  background: #14181c;
+  background-color: #0c0a08;
 }
 
+#art-harbor::before,
+#art-empty::before,
+#art-ledger::before,
 #art-houses::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 420' fill='none'%3E%3Crect width='800' height='420' fill='%2314181c'/%3E%3C!-- evening sky --%3E%3Cdefs%3E%3ClinearGradient id='eve' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%23182028'/%3E%3Cstop offset='100%25' stop-color='%232a3038'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='260' fill='url(%23eve)'/%3E%3Ccircle cx='120' cy='60' r='22' fill='%23c4b090' fill-opacity='0.2'/%3E%3C!-- ground --%3E%3Cpath d='M0 280 L800 270 L800 420 L0 420 Z' fill='%2312100e'/%3E%3Cpath d='M0 280 Q200 268 400 278 T800 270' stroke='%232a241c' stroke-width='2' fill='none'/%3E%3C!-- house 1 Federal --%3E%3Cg fill='%230e0c0a'%3E%3Crect x='80' y='160' width='140' height='130'/%3E%3Cpath d='M70 160 L150 100 L230 160 Z'/%3E%3Crect x='100' y='200' width='28' height='40' fill='%231a2228'/%3E%3Crect x='170' y='200' width='28' height='40' fill='%231a2228'/%3E%3Crect x='130' y='240' width='32' height='50' fill='%2314100c'/%3E%3C!-- chimney --%3E%3Crect x='185' y='115' width='14' height='40'/%3E%3C/g%3E%3C!-- lit windows --%3E%3Crect x='104' y='205' width='20' height='14' fill='%23c4a060' fill-opacity='0.3'/%3E%3Crect x='174' y='205' width='20' height='14' fill='%23c4a060' fill-opacity='0.25'/%3E%3C!-- house 2 larger --%3E%3Cg fill='%230c0a08'%3E%3Crect x='280' y='130' width='200' height='160'/%3E%3Cpath d='M265 130 L380 60 L495 130 Z'/%3E%3Crect x='300' y='160' width='30' height='36' fill='%23182028'/%3E%3Crect x='350' y='160' width='30' height='36' fill='%23182028'/%3E%3Crect x='400' y='160' width='30' height='36' fill='%23182028'/%3E%3Crect x='300' y='215' width='30' height='36' fill='%23182028'/%3E%3Crect x='400' y='215' width='30' height='36' fill='%23182028'/%3E%3Crect x='355' y='230' width='40' height='60' fill='%2312100e'/%3E%3Crect x='430' y='80' width='16' height='50'/%3E%3C!-- columns --%3E%3Crect x='340' y='200' width='8' height='90' fill='%231a1612'/%3E%3Crect x='402' y='200' width='8' height='90' fill='%231a1612'/%3E%3C/g%3E%3Crect x='304' y='165' width='22' height='12' fill='%23c4a060' fill-opacity='0.28'/%3E%3Crect x='354' y='165' width='22' height='12' fill='%23c4a060' fill-opacity='0.32'/%3E%3Crect x='404' y='165' width='22' height='12' fill='%23c4a060' fill-opacity='0.22'/%3E%3C!-- house 3 --%3E%3Cg fill='%230d0b09'%3E%3Crect x='540' y='150' width='160' height='140' fill='%230d0b09'/%3E%3Cpath d='M530 150 L620 95 L710 150 Z' fill='%230c0a08'/%3E%3Crect x='560' y='180' width='28' height='38' fill='%23182028'/%3E%3Crect x='650' y='180' width='28' height='38' fill='%23182028'/%3E%3Crect x='595' y='230' width='36' height='60' fill='%2312100e'/%3E%3Crect x='660' y='110' width='14' height='38' fill='%230c0a08'/%3E%3C/g%3E%3Crect x='564' y='185' width='20' height='12' fill='%23c4a060' fill-opacity='0.26'/%3E%3Crect x='654' y='185' width='20' height='12' fill='%23c4a060' fill-opacity='0.2'/%3E%3C!-- iron fence --%3E%3Cg stroke='%232a241c' stroke-width='2' fill='none'%3E%3Cline x1='60' y1='295' x2='740' y2='288'/%3E%3C/g%3E%3Cg fill='%231a1612'%3E%3Crect x='90' y='278' width='3' height='20'/%3E%3Crect x='130' y='277' width='3' height='20'/%3E%3Crect x='170' y='276' width='3' height='20'/%3E%3Crect x='250' y='275' width='3' height='20'/%3E%3Crect x='320' y='274' width='3' height='20'/%3E%3Crect x='390' y='273' width='3' height='20'/%3E%3Crect x='460' y='272' width='3' height='20'/%3E%3Crect x='530' y='272' width='3' height='20'/%3E%3Crect x='600' y='271' width='3' height='20'/%3E%3Crect x='670' y='270' width='3' height='20'/%3E%3C/g%3E%3C!-- path --%3E%3Cpath d='M370 290 Q400 340 390 420' stroke='%231e1a14' stroke-width='28' fill='none' opacity='0.6'/%3E%3C!-- tree silhouette --%3E%3Cg fill='%230a0908' opacity='0.8'%3E%3Crect x='40' y='200' width='8' height='90'/%3E%3Cellipse cx='44' cy='190' rx='35' ry='45'/%3E%3Crect x='750' y='190' width='7' height='95'/%3E%3Cellipse cx='753' cy='180' rx='30' ry='40'/%3E%3C/g%3E%3C/svg%3E");
   background-size: cover;
   background-position: center;
-  filter: sepia(0.38) contrast(1.06) brightness(0.9);
+  background-repeat: no-repeat;
+}
+
+#art-harbor::before {
+  background-image: url("assets/harbor-departure.jpg");
+  filter: grayscale(0.35) sepia(0.45) contrast(1.08) brightness(0.88);
+}
+
+#art-empty::before {
+  background-image: url("assets/last-of-fleet.jpg");
+  filter: grayscale(0.55) sepia(0.5) contrast(1.12) brightness(0.82);
+}
+
+#art-ledger::before {
+  background-image: url("assets/shipping-list.jpg");
+  filter: grayscale(0.2) sepia(0.55) contrast(1.05) brightness(0.92);
+  background-position: center top;
+}
+
+#art-houses::before {
+  background-image: url("assets/ropes-mansion.jpg");
+  filter: grayscale(0.25) sepia(0.4) contrast(1.06) brightness(0.9);
+}
+
+/* Film wash over photos */
+#art-harbor::after,
+#art-empty::after,
+#art-ledger::after,
+#art-houses::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.45) 100%),
+    linear-gradient(180deg, rgba(20, 14, 8, 0.15), rgba(10, 8, 6, 0.35));
+  mix-blend-mode: multiply;
+  opacity: 0.85;
 }
 
 /* —— Controls —— */
