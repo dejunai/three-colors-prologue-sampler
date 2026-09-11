@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Widow's Bight — A Civic History (Prologue Sampler)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Special+Elite&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="stage" class="stage" role="application" aria-label="Civic reel: A Brief History of Widow's Bight">
+    <div class="film-frame" id="film-frame">
+      <div class="vignette" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+      <div class="flicker" id="flicker" aria-hidden="true"></div>
+      <div class="iris" id="iris" aria-hidden="true"></div>
+
+      <div id="slides" class="slides">
+        <!-- Slides injected / defined in markup for clarity -->
+
+        <!-- 0: Title -->
+        <section class="slide intertitle active" data-duration="5200" aria-label="Title card">
+          <div class="card">
+            <p class="ornament">✦ · · · ✦</p>
+            <h1>A BRIEF HISTORY<br />OF WIDOW'S BIGHT</h1>
+            <p class="subtitle">As Presented by the Municipal Board<br />of Trade &amp; Civic Improvement</p>
+            <p class="ornament small">— 1923 —</p>
+          </div>
+        </section>
+
+        <!-- 1: Harbor still -->
+        <section class="slide panel" data-duration="4800" aria-label="Harbor of Widow's Bight">
+          <div class="art" id="art-harbor"></div>
+          <p class="caption">The Harbor of Widow's Bight — Gateway of Prosperity</p>
+        </section>
+
+        <!-- 2: Intertitle fleet -->
+        <section class="slide intertitle" data-duration="7000" aria-label="The fleet">
+          <div class="card">
+            <p class="ornament">· · ·</p>
+            <p class="body-text">
+              In the decade of the eighteen-twenties,<br />
+              the town's whaling fleet put out<br />
+              upon the northern grounds—
+            </p>
+            <p class="body-text gap">
+              and did not return.
+            </p>
+            <p class="ornament">· · ·</p>
+          </div>
+        </section>
+
+        <!-- 3: Empty berths still -->
+        <section class="slide panel" data-duration="5200" aria-label="Empty berths">
+          <div class="art" id="art-empty"></div>
+          <p class="caption">Berths once crowded with the fleet — recorded vacant</p>
+        </section>
+
+        <!-- 4: Intertitle survivors -->
+        <section class="slide intertitle" data-duration="7500" aria-label="Survivor accounts">
+          <div class="card">
+            <p class="ornament">· · ·</p>
+            <p class="body-text">
+              Of those few who came ashore,<br />
+              no two accounts agreed.
+            </p>
+            <p class="body-text gap">
+              Each telling differed from the last.<br />
+              The matter was left unsettled.
+            </p>
+            <p class="ornament">· · ·</p>
+          </div>
+        </section>
+
+        <!-- 5: Ledger / testimony still -->
+        <section class="slide panel" data-duration="5200" aria-label="Official ledgers">
+          <div class="art" id="art-ledger"></div>
+          <p class="caption">Municipal ledgers — testimony entered, filed, and closed</p>
+        </section>
+
+        <!-- 6: Intertitle insurance -->
+        <section class="slide intertitle" data-duration="7500" aria-label="Insurance settlements">
+          <div class="card">
+            <p class="ornament">· · ·</p>
+            <p class="body-text">
+              Settlements from the insurers<br />
+              arrived in due course—
+            </p>
+            <p class="body-text gap">
+              and passed into the hands<br />
+              of a small number of households,<br />
+              thereafter foremost in civic life.
+            </p>
+            <p class="ornament">· · ·</p>
+          </div>
+        </section>
+
+        <!-- 7: Fine houses still -->
+        <section class="slide panel" data-duration="5200" aria-label="Civic residences">
+          <div class="art" id="art-houses"></div>
+          <p class="caption">Residences of standing — the town's enduring families</p>
+        </section>
+
+        <!-- 8: Soft juxtaposition — optional civic note -->
+        <section class="slide intertitle" data-duration="6500" aria-label="That same season">
+          <div class="card">
+            <p class="ornament">· · ·</p>
+            <p class="body-text">
+              That same season, a tidal surge<br />
+              claimed a low island station<br />
+              beyond the outer reef.
+            </p>
+            <p class="body-text gap quiet">
+              Charts were amended.<br />
+              No further inquiry was required.
+            </p>
+            <p class="ornament">· · ·</p>
+          </div>
+        </section>
+
+        <!-- 9: Present day / close -->
+        <section class="slide intertitle finale" data-duration="6000" aria-label="Widow's Bight, 1923">
+          <div class="card">
+            <p class="ornament">✦ · · · ✦</p>
+            <h2>WIDOW'S BIGHT</h2>
+            <p class="subtitle large">1923</p>
+            <p class="body-text gap quiet">
+              A town of sound reputation,<br />
+              and of unbroken continuity.
+            </p>
+            <p class="ornament small">End of Official Presentation</p>
+          </div>
+        </section>
+
+        <!-- 10: Iris to black / Chapter One readiness -->
+        <section class="slide blackout" data-duration="3500" aria-label="Fade to Chapter One">
+          <div class="card dark">
+            <p class="whisper">Chapter One awaits.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="controls" role="toolbar" aria-label="Reel controls">
+      <button type="button" id="btn-prev" class="ctrl" title="Previous (←)" aria-label="Previous slide">‹</button>
+      <div id="dots" class="dots" role="tablist" aria-label="Slide progress"></div>
+      <button type="button" id="btn-next" class="ctrl" title="Next (→ / Space)" aria-label="Next slide">›</button>
+      <button type="button" id="btn-restart" class="ctrl text" title="Restart reel">Restart</button>
+      <button type="button" id="btn-motion" class="ctrl text" title="Toggle film flicker" aria-pressed="false">Motion</button>
+      <span class="hint">Click · Space · ← →</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
